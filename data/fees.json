@@ -1,0 +1,42 @@
+{
+  "year": 2026,
+  "term_label": "Per Term",
+  "currency": "Kshs",
+  "columns": [
+    "Tuition", "Meals", "Exams", "Maintenance",
+    "Motivation", "Activities", "French, Computer & Music", "Total"
+  ],
+  "classes": [
+    { "name": "Playgroup", "values": [4000, 4000, 500, 500, 200, 300, 0, 9500] },
+    { "name": "PP 1",      "values": [4500, 4500, 500, 500, 200, 300, 0, 10500] },
+    { "name": "PP 2",      "values": [4500, 4500, 500, 500, 200, 300, 3000, 13500] },
+    { "name": "Grade 1",   "values": [5000, 4600, 500, 500, 200, 300, 3000, 14100] },
+    { "name": "Grade 2",   "values": [5000, 4600, 500, 500, 200, 300, 3000, 14100] },
+    { "name": "Grade 3",   "values": [5000, 4600, 500, 500, 200, 300, 3000, 14100] },
+    { "name": "Grade 4",   "values": [5500, 5100, 500, 500, 200, 300, 3000, 15100] },
+    { "name": "Grade 5",   "values": [5500, 5100, 500, 500, 200, 300, 3000, 15100] },
+    { "name": "Grade 6",   "values": [5500, 5100, 500, 500, 200, 300, 3000, 15100] }
+  ],
+  "extra_charges": [
+    { "item": "Extra-Curricular Activities (Skating, Ballet/Modern Dance, Karate/Taekwondo)", "amount": 1500, "unit": "per term" },
+    { "item": "Swimming Classes", "amount": 200, "unit": "per lesson" },
+    { "item": "Grade 4, 5 & 6 Morning Remedials", "amount": 1500, "unit": "per term" }
+  ],
+  "transport": [
+    { "route": "Around Arizona",    "term_fee": 3000 },
+    { "route": "Shopping Mall",     "term_fee": 3700 },
+    { "route": "M.C",               "term_fee": 5000 },
+    { "route": "Githunguri",        "term_fee": 4000 },
+    { "route": "Komarock",          "term_fee": 4200 },
+    { "route": "By Pass",           "term_fee": 5000 },
+    { "route": "Block 10 / 26",     "term_fee": 10000 },
+    { "route": "Benedicta, Mofarm", "term_fee": 4000 },
+    { "route": "Mihang'o",          "term_fee": 4500 },
+    { "route": "Airways",           "term_fee": 6000 },
+    { "route": "Astrol",            "term_fee": 7000 }
+  ],
+  "payment": {
+    "kcb_paybill": { "business_no": "522123", "account": "88346K + names" },
+    "bank_deposit": { "account": "1297030311" }
+  }
+}
