@@ -415,7 +415,9 @@ body.menu-open .nav-burger span:nth-child(3) { transform: translateY(-5px) rotat
   background: var(--ink-3);
   color: var(--on-ink);
   overflow: hidden;
-  padding: 22px 0;
+  /* extra bottom padding: the next section's panel curls -32px over this
+     strip, so the text stays clear of it and visually centred */
+  padding: 22px 0 54px;
   border-top: 1px solid var(--line-ink);
 }
 .marquee-track {
@@ -1213,10 +1215,16 @@ body.menu-open .nav-burger span:nth-child(3) { transform: translateY(-5px) rotat
   .step { grid-template-columns: 1fr; gap: 8px; }
   .lightbox { padding: 24px; }
 
+  /* payment rows stack label-over-value so long account names don't cramp */
+  .pay-line { flex-direction: column; align-items: flex-start; gap: 4px; }
+
   /* tables collapse to cards */
   .table-wrap { border: none; }
   .data-table thead { display: none; }
-  .data-table, .data-table tbody, .data-table tr, .data-table td { display: block; width: 100%; }
+  .data-table { display: flex; flex-direction: column; }
+  .data-table tbody, .data-table tr, .data-table td { display: block; width: 100%; }
+  /* caption flows as a normal paragraph below the cards (not vertically) */
+  .data-table caption { display: block; order: 1; padding: 12px 2px 0; }
   .data-table tr {
     background: var(--paper-card) !important;
     border: 1px solid var(--line-paper);
