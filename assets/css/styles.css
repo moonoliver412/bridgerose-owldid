@@ -250,9 +250,10 @@ ul, ol { list-style: none; }
 .nav-logo-badge img { width: 100%; height: 100%; object-fit: contain; }
 
 .nav-logo-text {
-  font: italic 600 22px/1 var(--f-serif);
+  font: italic 600 21px/1 var(--f-serif);
   color: var(--on-ink);
   letter-spacing: 0;
+  white-space: nowrap;
 }
 .nav-logo-text b { color: var(--rose); font-weight: 600; }
 
@@ -346,6 +347,8 @@ body.menu-open .nav-burger span:nth-child(3) { transform: translateY(-5px) rotat
   gap: 56px;
   align-items: center;
 }
+.hero-text { position: relative; }
+.hero-mark { display: none; }
 .hero-pre { margin-bottom: 26px; }
 .hero h1 { margin-bottom: 26px; }
 .hero-sub {
@@ -1169,6 +1172,20 @@ body.menu-open .nav-burger span:nth-child(3) { transform: translateY(-5px) rotat
 @media (max-width: 920px) {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-card { max-width: 420px; }
+  .hero-mark {
+    display: block;
+    position: absolute;
+    top: -6px;
+    right: -4px;
+    width: 110px; height: 110px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 8px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.28);
+    z-index: 1;
+  }
+  .hero-mark img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .hero-pre, .hero h1 { padding-right: 124px; }
   .split { grid-template-columns: 1fr; gap: 32px; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1182,6 +1199,8 @@ body.menu-open .nav-burger span:nth-child(3) { transform: translateY(-5px) rotat
   :root { --pad: 20px; }
   .section    { padding: 72px 0; }
   .section-lg { padding: 92px 0; }
+  .hero-mark { width: 88px; height: 88px; padding: 6px; }
+  .hero-pre, .hero h1 { padding-right: 100px; }
 
   /* the utility strip wraps to two lines on phones — drop the nav clear of it */
   .utility { padding: 7px 0; }
@@ -1257,9 +1276,11 @@ body.menu-open .nav-burger span:nth-child(3) { transform: translateY(-5px) rotat
 
   /* shrink the brand lock-up so it never crowds the burger on tiny screens */
   .nav-logo-badge { width: 38px; height: 38px; }
-  .nav-logo-text  { font-size: 19px; }
+  .nav-logo-text  { font-size: 16px; }
   .nav-overlay a  { font-size: 27px; }
   .hero-trust     { gap: 18px 26px; }
+  .hero-mark      { width: 72px; height: 72px; padding: 5px; }
+  .hero-pre, .hero h1 { padding-right: 84px; }
 }
 
 /* short viewports (landscape phones) — list the menu from the top, scrollable */
