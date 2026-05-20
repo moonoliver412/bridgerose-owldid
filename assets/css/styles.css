@@ -220,9 +220,11 @@ ul, ol { list-style: none; }
   max-width: 1280px;
   margin: 0 auto;
   z-index: 1000;
-  transition: top 0.3s ease, max-width 0.3s ease;
+  transition: top 0.3s ease;
 }
-.nav.scrolled { top: 12px; max-width: 1020px; }
+/* keep the nav at full width when scrolled — shrinking it caused the Apply
+   Now button to spill outside the pill on mid-range widths */
+.nav.scrolled { top: 12px; }
 
 .nav-inner {
   display: flex; align-items: center; gap: 18px;
@@ -249,13 +251,27 @@ ul, ol { list-style: none; }
 }
 .nav-logo-badge img { width: 100%; height: 100%; object-fit: contain; }
 
+/* two-line brand lock-up: "Bridgerose Jewels" over a tracked "ACADEMY" */
 .nav-logo-text {
-  font: italic 600 21px/1 var(--f-serif);
-  color: var(--on-ink);
-  letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  line-height: 1;
   white-space: nowrap;
 }
-.nav-logo-text b { color: var(--rose); font-weight: 600; }
+.nav-logo-text .lockup-main {
+  font: italic 600 20px/1 var(--f-serif);
+  color: var(--on-ink);
+  letter-spacing: 0;
+}
+.nav-logo-text .lockup-sub {
+  font: 700 9px/1 var(--f-mono);
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--rose);
+  padding-left: 2px;
+}
+.bg-paper .nav-logo-text .lockup-main { color: var(--on-paper); }
 
 .nav-links {
   display: flex; align-items: center; gap: 2px;
@@ -1088,7 +1104,8 @@ body.menu-open .nav-burger span:nth-child(3) { transform: translateY(-5px) rotat
   padding: 6px;
 }
 .footer-logo-badge img { width: 100%; height: 100%; object-fit: contain; }
-.footer-brand .nav-logo-text { font-size: 26px; }
+.footer-brand .nav-logo-text .lockup-main { font-size: 25px; }
+.footer-brand .nav-logo-text .lockup-sub  { font-size: 10.5px; letter-spacing: 0.38em; }
 .footer-brand p { color: var(--on-ink-2); font-size: 14px; max-width: 30ch; }
 .footer-col h4 {
   font: 400 12px/1 var(--f-mono);
@@ -1276,7 +1293,8 @@ body.menu-open .nav-burger span:nth-child(3) { transform: translateY(-5px) rotat
 
   /* shrink the brand lock-up so it never crowds the burger on tiny screens */
   .nav-logo-badge { width: 38px; height: 38px; }
-  .nav-logo-text  { font-size: 16px; }
+  .nav-logo-text .lockup-main { font-size: 15px; }
+  .nav-logo-text .lockup-sub  { font-size: 7.5px; letter-spacing: 0.30em; }
   .nav-overlay a  { font-size: 27px; }
   .hero-trust     { gap: 18px 26px; }
   .hero-mark      { width: 72px; height: 72px; padding: 5px; }

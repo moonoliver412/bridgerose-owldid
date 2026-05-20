@@ -9,7 +9,7 @@
   "classes": [
     { "name": "Playgroup", "values": [4000, 4000, 500, 500, 200, 300, 0, 9500] },
     { "name": "PP 1",      "values": [4500, 4500, 500, 500, 200, 300, 0, 10500] },
-    { "name": "PP 2",      "values": [4500, 4500, 500, 500, 200, 300, 3000, 13500] },
+    { "name": "PP 2",      "values": [4500, 4500, 500, 500, 200, 300, 2000, 12500] },
     { "name": "Grade 1",   "values": [5000, 4600, 500, 500, 200, 300, 3000, 14100] },
     { "name": "Grade 2",   "values": [5000, 4600, 500, 500, 200, 300, 3000, 14100] },
     { "name": "Grade 3",   "values": [5000, 4600, 500, 500, 200, 300, 3000, 14100] },
@@ -36,7 +36,7 @@
     { "route": "Astrol",            "term_fee": 7000 }
   ],
   "payment": {
-    "kcb_paybill": { "business_no": "522123", "account": "88346K + names" },
+    "kcb_paybill": { "business_no": "522123", "account": "88346K + child's name" },
     "bank_deposit": { "account": "1297030311" }
   }
 }
