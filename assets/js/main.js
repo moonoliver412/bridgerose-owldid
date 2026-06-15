@@ -129,6 +129,11 @@
     track.innerHTML += track.innerHTML;
   });
 
+  /* ---------- Gallery strips: duplicate for seamless loop -- */
+  document.querySelectorAll(".gx-track").forEach(function (track) {
+    track.innerHTML += track.innerHTML;
+  });
+
   /* ---------- Tabs (academics) ----------------------------- */
   document.querySelectorAll("[data-tabs]").forEach(function (group) {
     var tabs = group.querySelectorAll(".tab");
