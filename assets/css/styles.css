@@ -993,7 +993,7 @@ body.menu-open .nav-burger span:nth-child(3) { transform: translateY(-5px) rotat
 .bg-ink .value-chip span { color: var(--on-ink-2); }
 
 /* payment cards */
-.pay-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.pay-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 380px)); gap: 18px; }
 .pay-card {
   background: var(--paper-card);
   border-radius: var(--r-lg);
