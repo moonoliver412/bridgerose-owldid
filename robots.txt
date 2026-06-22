@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bridgerosejewels.example/sitemap.xml
+Sitemap: https://bridgerosejewels.academy/sitemap.xml

@@ -101,9 +101,9 @@ content:
   history / founding year, exact tagline, office hours, social media handles,
   the bank name for account `1297030311`, and the exact Google Maps pin for the
   campus (`contact.html`).
-- **Canonical URLs / sitemap** — replace `https://bridgerosejewels.example/`
-  in every page's `<link rel="canonical">`, the Open Graph tags, `sitemap.xml`
-  and `robots.txt` with the real domain.
+- **Canonical URLs / sitemap** — the canonical domain is
+  `https://bridgerosejewels.academy/`, used in every page's
+  `<link rel="canonical">`, the Open Graph tags, `sitemap.xml` and `robots.txt`.
 
 ---
 
