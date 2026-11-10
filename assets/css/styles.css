@@ -1382,3 +1382,21 @@ body.menu-open .nav-burger span:nth-child(3) { transform: translateY(-5px) rotat
   .nav-overlay a   { font-size: 24px; padding: 5px 0; }
   .nav-overlay .btn { margin-top: 18px; }
 }
+
+/* ---------- Floating WhatsApp button ----------------------------------- */
+.wa-float{
+  position:fixed;right:20px;bottom:20px;z-index:950;
+  display:inline-flex;align-items:center;gap:10px;
+  height:56px;padding:0 20px 0 16px;border-radius:999px;
+  background:#25D366;color:#fff;text-decoration:none;
+  font:600 15px/1 var(--f-ui, system-ui, sans-serif);
+  box-shadow:0 10px 24px -8px rgba(20,35,61,.45),0 2px 6px rgba(20,35,61,.18);
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.wa-float:hover{background:#1ebe5a;transform:translateY(-2px);box-shadow:0 14px 28px -8px rgba(20,35,61,.5),0 3px 8px rgba(20,35,61,.2)}
+.wa-float:focus-visible{outline:3px solid var(--navy, #14233D);outline-offset:3px}
+@media (max-width:640px){
+  .wa-float{right:16px;bottom:16px;width:56px;padding:0;justify-content:center}
+  .wa-float .wa-label{display:none}
+}
+@media print{.wa-float{display:none}}
